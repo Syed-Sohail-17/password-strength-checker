@@ -1,0 +1,24 @@
+  return False
+def has_lowercase(password):
+  for char in password:
+    if char.islower():
+      return True
+  return False
+def has_digit(password):
+  for char in password:
+    if char.isdigit():
+      return True
+  return Falsedef has_special_character(password):
+  for char in password:
+    if char=="@" or char=="!" or char=="#" or char=="$" or char=="%" or char=="^" or char=="&" or char=="*":
+      return True
+  return False
+def is_common_password(password):
+  for i in COMMON_PASSWORDS:
+    if password.lower() == i:
+      return True
+  return False
+def main():
+  password=input("Enter a password: ")
+  print("Password: ",password)
+  print("Lengigit: ",has_digit
